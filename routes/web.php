@@ -18,3 +18,17 @@ Route::get('/', function () {
 Route::get('user',function(){
 	echo "welcome to laravel";
 });
+Route::get('new/{c111}', function($id){
+	echo "id: {$id}";
+});
+Route::group(['prefix'=> 'group'], function(){
+
+
+Route::get('',function(){
+	echo "welcome baby to laravel";
+});
+Route::get('{c1111}', function($id){
+	echo "id: {$id}";
+});
+
+});
